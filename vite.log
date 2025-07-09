@@ -7,3 +7,8 @@
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
+9:17:19 PM [vite] (client) page reload .claude/settings.local.json
+9:17:45 PM [vite] (client) page reload .claude/settings.local.json
+9:17:48 PM [vite] (client) page reload .claude/settings.local.json
+9:21:34 PM [vite] vite.config.ts changed, restarting server...
+9:21:34 PM [vite] server restarted.
