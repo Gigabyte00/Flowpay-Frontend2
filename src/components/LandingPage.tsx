@@ -72,9 +72,9 @@ function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen animated-gradient">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+      <nav className="glass backdrop-blur-md shadow-elevated sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <FlowPayLogo size="small" />
@@ -84,7 +84,7 @@ function LandingPage() {
               <a href="#pricing" className="text-gray-700 hover:text-purple-600 transition-colors">Pricing</a>
               <button 
                 onClick={() => document.getElementById('auth-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all transform hover:scale-105"
+                className="btn-primary hover-glow transition-smooth"
               >
                 Get Started
               </button>
@@ -101,22 +101,22 @@ function LandingPage() {
               <Zap className="w-4 h-4 mr-2" />
               Powered by Stripe Connect
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
-              Pay Anyone with Your <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Credit Card</span>
+            <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 animate-float">
+              Pay Anyone with Your <span className="text-gradient-purple">Credit Card</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Transform your credit card payments into ACH transfers, wires, or checks. Pay rent, tuition, medical bills, and more while earning rewards.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <button 
                 onClick={() => document.getElementById('auth-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all transform hover:scale-105"
+                className="btn-primary text-lg px-8 py-4 hover-lift shadow-glow"
               >
                 Start Paying Smarter
               </button>
               <button 
                 onClick={handleDemoLogin}
-                className="bg-white text-purple-600 px-8 py-4 rounded-xl text-lg font-semibold border-2 border-purple-200 hover:border-purple-400 hover:shadow-lg transition-all"
+                className="btn-secondary text-lg px-8 py-4 hover-lift text-white border-white/30"
               >
                 Try Demo
               </button>
@@ -125,16 +125,16 @@ function LandingPage() {
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-purple-600 mb-2">3.5%</div>
+            <div className="card hover-lift text-center shadow-elevated">
+              <div className="text-3xl font-bold text-gradient mb-2">3.5%</div>
               <div className="text-gray-600">Transaction Fee</div>
             </div>
-            <div className="bg-white/80 backdrop-blur rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-blue-600 mb-2">Instant</div>
+            <div className="card hover-lift text-center shadow-elevated">
+              <div className="text-3xl font-bold text-gradient mb-2">Instant</div>
               <div className="text-gray-600">Stripe Payouts</div>
             </div>
-            <div className="bg-white/80 backdrop-blur rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-pink-600 mb-2">Secure</div>
+            <div className="card hover-lift text-center shadow-elevated">
+              <div className="text-3xl font-bold text-gradient mb-2">Secure</div>
               <div className="text-gray-600">PCI Compliant</div>
             </div>
           </div>
@@ -142,11 +142,11 @@ function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
+      <section id="features" className="py-16 px-4 sm:px-6 lg:px-8 glass">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Why Choose FlowPay?</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-gradient">Why Choose FlowPay?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="card hover-lift shadow-elevated">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6">
                 <CreditCard className="w-8 h-8 text-white" />
               </div>
